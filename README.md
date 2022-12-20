@@ -14,6 +14,7 @@ Welcome to my repository for all the work I have completed during my Bachelor's 
   - Algorithms
   - Calculus
   - Matrix & Vectors
+  - Language and Mathematical Reasoning
 - Second semester
   - Introduction to Computers
   - Discrete Mathematics
