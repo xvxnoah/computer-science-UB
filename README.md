@@ -11,7 +11,7 @@ Welcome to my repository for all the work I have completed during my Bachelor's 
 - First semester
   - Basic Digital Design
   - Programming I
-  - Algorithmic
+  - Algorithms
   - Calculus
   - Matrix & Vectors
 - Second semester
@@ -24,7 +24,7 @@ Welcome to my repository for all the work I have completed during my Bachelor's 
 2️⃣: Second year
 ---
 - First semester
-  - Advanced Algorithmic
+  - Advanced Algorithms
   - Introduction to Scientific Computing
   - Software Design
   - Electronics
