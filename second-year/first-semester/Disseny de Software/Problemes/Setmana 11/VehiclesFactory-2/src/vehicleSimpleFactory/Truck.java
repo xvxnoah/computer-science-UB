@@ -1,0 +1,30 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package vehicleSimpleFactory;
+
+/**
+ *
+ * @author anna
+ */
+public class Truck extends Vehicle {
+
+	/**
+	 * 
+	 */
+	public Truck() {
+		System.out.println("Estic creant un camio"); // TODO Auto-generated constructor stub
+	}
+
+	/* (non-Javadoc)
+	 * @see com.globinch.pattern.factory.simple.Vehicle#drive()
+	 */
+	@Override
+	public void drive() {
+		System.out.println("I am driving a truck !!");
+
+	}
+
+}

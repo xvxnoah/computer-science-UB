@@ -1,0 +1,159 @@
+@startuml
+
+title __GUMBALLSTATEWINNER's Class Diagram__\n
+
+
+        class gumballstatewinner.GumballMachine {
+            ~ count : int
+            + GumballMachine()
+            + ejectQuarter()
+            + getHasQuarterState()
+            + getNoQuarterState()
+            + getSoldOutState()
+            + getSoldState()
+            + getState()
+            + getWinnerState()
+            + insertQuarter()
+            + toString()
+            + turnCrank()
+            ~ getCount()
+            ~ refill()
+            ~ releaseBall()
+            ~ setState()
+        }
+
+        class gumballstatewinner.GumballMachineTestDrive {
+            {static} + main()
+        }
+
+        class gumballstatewinner.HasQuarterState {
+            ~ randomWinner : Random
+            + HasQuarterState()
+            + dispense()
+            + ejectQuarter()
+            + insertQuarter()
+            + toString()
+            + turnCrank()
+        }
+
+        class gumballstatewinner.NoQuarterState {
+            + NoQuarterState()
+            + dispense()
+            + ejectQuarter()
+            + insertQuarter()
+            + toString()
+            + turnCrank()
+        }
+
+        class gumballstatewinner.SoldOutState {
+            + SoldOutState()
+            + dispense()
+            + ejectQuarter()
+            + insertQuarter()
+            + toString()
+            + turnCrank()
+        }
+
+        class gumballstatewinner.SoldState {
+            + SoldState()
+            + dispense()
+            + ejectQuarter()
+            + insertQuarter()
+            + toString()
+            + turnCrank()
+        }
+
+        interface gumballstatewinner.State {
+            {abstract} + dispense()
+            {abstract} + ejectQuarter()
+            {abstract} + insertQuarter()
+            {abstract} + turnCrank()
+        }
+
+        class gumballstatewinner.WinnerState {
+            + WinnerState()
+            + dispense()
+            + ejectQuarter()
+            + insertQuarter()
+            + toString()
+            + turnCrank()
+        }
+
+  
+
+  gumballstatewinner.GumballMachine o- gumballstatewinner.State : hasQuarterState
+  gumballstatewinner.GumballMachine o- gumballstatewinner.State : noQuarterState
+  gumballstatewinner.GumballMachine o- gumballstatewinner.State : soldOutState
+  gumballstatewinner.GumballMachine o- gumballstatewinner.State : soldState
+  gumballstatewinner.GumballMachine o- gumballstatewinner.State : state
+  gumballstatewinner.GumballMachine o- gumballstatewinner.State : winnerState
+  gumballstatewinner.HasQuarterState .up.|> gumballstatewinner.State
+  gumballstatewinner.HasQuarterState o-- gumballstatewinner.GumballMachine : gumballMachine
+  gumballstatewinner.NoQuarterState .up.|> gumballstatewinner.State
+  gumballstatewinner.NoQuarterState o-- gumballstatewinner.GumballMachine : gumballMachine
+  gumballstatewinner.SoldOutState .up.|> gumballstatewinner.State
+  gumballstatewinner.SoldOutState o-- gumballstatewinner.GumballMachine : gumballMachine
+  gumballstatewinner.SoldState .up.|> gumballstatewinner.State
+  gumballstatewinner.SoldState o-- gumballstatewinner.GumballMachine : gumballMachine
+  gumballstatewinner.WinnerState .up.|> gumballstatewinner.State
+  gumballstatewinner.WinnerState o-- gumballstatewinner.GumballMachine : gumballMachine
+gumballstatewinner.GumballMachineTestDrive --> gumballstatewinner.GumballMachine: uses
+
+note left of gumballstatewinner.WinnerState
+
+public class WinnerState implements State {
+    GumballMachine gumballMachine;
+
+    public WinnerState(GumballMachine gumballMachine) {
+        this.gumballMachine = gumballMachine;
+    }
+
+	public void insertQuarter() {
+		System.out.println("Please wait, we're already giving you a Gumball");
+	}
+
+	public void ejectQuarter() {
+		System.out.println("Please wait, we're already giving you a Gumball");
+	}
+
+	public void turnCrank() {
+		System.out.println("Turning again doesn't get you another gumball!");
+	}
+
+	public void dispense() {
+		System.out.println("YOU'RE A WINNER! You get two gumballs for your quarter");
+		gumballMachine.releaseBall();
+		if (gumballMachine.getCount() == 0) {
+			gumballMachine.setState(gumballMachine.getSoldOutState());
+		} else {
+			gumballMachine.releaseBall();
+			if (gumballMachine.getCount() > 0) {
+				gumballMachine.setState(gumballMachine.getNoQuarterState());
+			} else {
+            	System.out.println("Oops, out of gumballs!");
+				gumballMachine.setState(gumballMachine.getSoldOutState());
+			}
+		}
+	}
+end note
+
+note left of gumballstatewinner.HasQuarterState
+public void turnCrank() {
+		System.out.println("You turned...");
+		int winner = randomWinner.nextInt(10);
+		if ((winner == 0) && (gumballMachine.getCount() > 1)) {
+			gumballMachine.setState(gumballMachine.getWinnerState());
+		} else {
+			gumballMachine.setState(gumballMachine.getSoldState());
+		}
+	}
+end note
+
+right footer
+
+
+PlantUML diagram generated by SketchIt! (https://bitbucket.org/pmesmeur/sketch.it)
+For more information about this tool, please contact philippe.mesmeur@gmail.com
+endfooter
+
+@enduml
