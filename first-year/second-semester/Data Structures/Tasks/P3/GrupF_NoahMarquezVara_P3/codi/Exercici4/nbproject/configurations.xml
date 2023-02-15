@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configurationDescriptor version="100">
+  <logicalFolder name="root" displayName="root" projectFiles="true" kind="ROOT">
+    <logicalFolder name="HeaderFiles"
+                   displayName="Header Files"
+                   projectFiles="true">
+      <itemPath>AVLTree.h</itemPath>
+      <itemPath>BinarySearchTree.h</itemPath>
+      <itemPath>BinaryTreeNode.h</itemPath>
+      <itemPath>Transaction.h</itemPath>
+      <itemPath>TransactionManagerAVL.h</itemPath>
+    </logicalFolder>
+    <logicalFolder name="ResourceFiles"
+                   displayName="Resource Files"
+                   projectFiles="true">
+      <itemPath>../Exercici2/queries.txt</itemPath>
+      <itemPath>../Exercici2/transactions-cas_de_prova.shuffled.txt</itemPath>
+      <itemPath>../Exercici2/transactions-cas_de_prova.txt</itemPath>
+      <itemPath>../Exercici2/transactions-large.shuffled.txt</itemPath>
+      <itemPath>../Exercici2/transactions-large.txt</itemPath>
+      <itemPath>../Exercici2/transactions-small.shuffled.txt</itemPath>
+      <itemPath>../Exercici2/transactions-small.txt</itemPath>
+    </logicalFolder>
+    <logicalFolder name="SourceFiles"
+                   displayName="Source Files"
+                   projectFiles="true">
+      <itemPath>Transaction.cpp</itemPath>
+      <itemPath>TransactionManagerAVL.cpp</itemPath>
+      <itemPath>main.cpp</itemPath>
+    </logicalFolder>
+    <logicalFolder name="TestFiles"
+                   displayName="Test Files"
+                   projectFiles="false"
+                   kind="TEST_LOGICAL_FOLDER">
+    </logicalFolder>
+    <logicalFolder name="ExternalFiles"
+                   displayName="Important Files"
+                   projectFiles="false"
+                   kind="IMPORTANT_FILES_FOLDER">
+      <itemPath>Makefile</itemPath>
+    </logicalFolder>
+  </logicalFolder>
+  <projectmakefile>Makefile</projectmakefile>
+  <confs>
+    <conf name="Debug" type="1">
+      <toolsSet>
+        <compilerSet>default</compilerSet>
+        <dependencyChecking>true</dependencyChecking>
+        <rebuildPropChanged>false</rebuildPropChanged>
+      </toolsSet>
+      <compileType>
+        <ccTool>
+          <standard>8</standard>
+        </ccTool>
+      </compileType>
+      <item path="../Exercici2/queries.txt" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../Exercici2/transactions-cas_de_prova.shuffled.txt"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../Exercici2/transactions-cas_de_prova.txt"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../Exercici2/transactions-large.shuffled.txt"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../Exercici2/transactions-large.txt"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../Exercici2/transactions-small.shuffled.txt"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../Exercici2/transactions-small.txt"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="AVLTree.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="BinarySearchTree.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="BinaryTreeNode.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Transaction.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Transaction.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="TransactionManagerAVL.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="TransactionManagerAVL.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="main.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+    </conf>
+    <conf name="Release" type="1">
+      <toolsSet>
+        <compilerSet>default</compilerSet>
+        <dependencyChecking>true</dependencyChecking>
+        <rebuildPropChanged>false</rebuildPropChanged>
+      </toolsSet>
+      <compileType>
+        <cTool>
+          <developmentMode>5</developmentMode>
+        </cTool>
+        <ccTool>
+          <developmentMode>5</developmentMode>
+          <standard>8</standard>
+        </ccTool>
+        <fortranCompilerTool>
+          <developmentMode>5</developmentMode>
+        </fortranCompilerTool>
+        <asmTool>
+          <developmentMode>5</developmentMode>
+        </asmTool>
+      </compileType>
+      <item path="../Exercici2/queries.txt" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../Exercici2/transactions-cas_de_prova.shuffled.txt"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../Exercici2/transactions-cas_de_prova.txt"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../Exercici2/transactions-large.shuffled.txt"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../Exercici2/transactions-large.txt"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../Exercici2/transactions-small.shuffled.txt"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../Exercici2/transactions-small.txt"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="AVLTree.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="BinarySearchTree.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="BinaryTreeNode.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Transaction.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Transaction.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="TransactionManagerAVL.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="TransactionManagerAVL.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="main.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+    </conf>
+  </confs>
+</configurationDescriptor>
