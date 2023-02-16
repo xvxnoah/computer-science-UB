@@ -1,0 +1,94 @@
+D(studentIdnr, studentName, login, branchName, programName, courseCode, courseName, credits, departmentName, capacity, classification, grade, position)
+
+ ___
+|   |
+| a)|
+|___|
+ 
+a)
+
+- studentIdnr -> studentName
+- studentIdnr -> login
+- studentIdnr -> programName
+- studentIdnr -> branchName
+
+- login -> studentIdnr
+
+- studentIdnr, courseCode -> grade
+- studentIdnr, courseCode -> position
+
+- courseCode, position -> studentIdnr
+
+- courseCode -> credits
+- courseCode -> courseName
+- courseCode -> capacity
+- courseCode -> departmentName
+
+
+------------------------------------------------------------------------------------------------
+ ___
+|   |
+| b)|
+|___|
+
+Attributes
+
+- studentIdnr studentName programName login branchName
+
+Functional Dependencies
+
+- studentIdnr ->  login studentName programName branchName
+- login       ->  studentIdnr 
+
+	--> R1: _studentIdnr_, studentName, login, programName, branchName
+	--> R2: studentIdnr, courseCode, courseName, credits, departmentName, capacity, 		classification, grade, position
+
+--------------------------------------------------------------------------------
+
+Attributes
+
+- studentIdnr courseCode classification
+
+Functional Dependencies -----
+
+	--> R222: studentIdnr, courseCode, classification
+
+-------------------------------------------------------------------------------
+
+Attributes
+
+- courseCode courseName credits departmentName capacity
+
+Functional Dependencies
+
+- courseCode -> courseName credits departmentName capacity    
+
+	--> R21: _courseCode_, courseName, credits, departmentName, capacity
+	--> R22: courseCode, studentIdnr, classification, grade, position
+
+-------------------------------------------------------------------------------
+
+Attributes
+
+- courseCode studentIdnr position grade
+
+Functional Dependencies
+
+- courseCode  studentIdnr   ->  position grade   
+- courseCode  position      ->  studentIdnr   
+
+	--> R221: _studentIdnr_, _courseCode_, grade, position
+	--> R2211: _studentIdnr, _courseCode_, grade
+	--> R2212: studentIdnr, courseCode, position
+------------------------------------------------------------------------------------------------
+ ___
+|   |
+| c)|
+|___|
+
+The MVD we found was naturally that the courses have multiple classifications, which led us to the following:
+- courseCode ->> classification
+
+The final normalising step with the 4NF algorithm is to split R222 into two relations:
+	- R2221: Registered(studentIdnr, courseCode)
+	- R2222: Classified(courseCode, classification)
