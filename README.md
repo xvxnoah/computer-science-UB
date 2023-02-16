@@ -29,7 +29,7 @@ Welcome to my repository for all the work I have completed during my Bachelor's 
   - Introduction to Scientific Computing
   - Software Design
   - Electronics
-  - Structure of Computers
+  - Computer Structure
 - Second semester
   - Probabilities and Statistics
   - Corporations
