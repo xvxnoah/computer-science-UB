@@ -1,0 +1,27 @@
+com/example/recyclerview_example/DatabaseAdapter.java
+ com.example.recyclerview_example.DatabaseAdapter
+ com.example.recyclerview_example.DatabaseAdapter$1
+ com.example.recyclerview_example.DatabaseAdapter$2
+ com.example.recyclerview_example.DatabaseAdapter$3
+ com.example.recyclerview_example.DatabaseAdapter$4
+ com.example.recyclerview_example.DatabaseAdapter$5
+ com.example.recyclerview_example.DatabaseAdapter$6
+ com.example.recyclerview_example.DatabaseAdapter$7
+ com.example.recyclerview_example.DatabaseAdapter$8
+ com.example.recyclerview_example.DatabaseAdapter$vmInterface
+com/example/recyclerview_example/BuildConfig.java
+ com.example.recyclerview_example.BuildConfig
+com/example/recyclerview_example/CustomAdapter.java
+ com.example.recyclerview_example.CustomAdapter
+ com.example.recyclerview_example.CustomAdapter$1
+ com.example.recyclerview_example.CustomAdapter$playerInterface
+com/example/recyclerview_example/CustomViewHolder.java
+ com.example.recyclerview_example.CustomViewHolder
+com/example/recyclerview_example/MainActivity.java
+ com.example.recyclerview_example.MainActivity
+ com.example.recyclerview_example.MainActivity$1
+ com.example.recyclerview_example.MainActivity$2
+com/example/recyclerview_example/MainActivityViewModel.java
+ com.example.recyclerview_example.MainActivityViewModel
+com/example/recyclerview_example/AudioCard.java
+ com.example.recyclerview_example.AudioCard

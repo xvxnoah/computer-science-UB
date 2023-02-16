@@ -1,0 +1,62 @@
+
+R version 4.1.2 (2021-11-01) -- "Bird Hippie"
+Copyright (C) 2021 The R Foundation for Statistical Computing
+Platform: x86_64-apple-darwin17.0 (64-bit)
+
+R is free software and comes with ABSOLUTELY NO WARRANTY.
+You are welcome to redistribute it under certain conditions.
+Type 'license()' or 'licence()' for distribution details.
+
+  Natural language support but running in an English locale
+
+R is a collaborative project with many contributors.
+Type 'contributors()' for more information and
+'citation()' on how to cite R or R packages in publications.
+
+Type 'demo()' for some demos, 'help()' for on-line help, or
+'help.start()' for an HTML browser interface to help.
+Type 'q()' to quit R.
+
+During startup - Warning messages:
+1: Setting LC_CTYPE failed, using "C" 
+2: Setting LC_COLLATE failed, using "C" 
+3: Setting LC_TIME failed, using "C" 
+4: Setting LC_MESSAGES failed, using "C" 
+5: Setting LC_MONETARY failed, using "C" 
+[R.app GUI 1.77 (8007) x86_64-apple-darwin17.0]
+
+WARNING: You're using a non-UTF8 locale, therefore only ASCII characters will work.
+Please read R for Mac OS X FAQ (see Help) section 9 and adjust your system preferences accordingly.
+[History restored from /Users/noahmv/.Rapp.history]
+
+> clear
+Error: object 'clear' not found
+> 10, 65,  65, 107,  7,   76, 16, 142,  1, 132, 214, 197, 54, 47, 18, 11,
+Error: unexpected ',' in "10,"
+> x <- read.table("/Users/noahmv/Documents/R_PE/peixos.txt", sep=',')
+> x
+   V1  V2  V3  V4 V5   V6 V7  V8 V9 V10 V11 V12 V13 V14 V15 V16 V17
+1  10  65  65 107  7   76 16 142  1 132 214 197  54  47  18  11  NA
+2   9  33  39  67 29  113 10  99  2 122 220 198  49  44  16  10  NA
+3   6  47  71  95 11  192  9 121  2 129 220 198  49  45  17  11  NA
+4   7  70  40  66  8  310 10  90  2 133 225 199  52  48  15  11  NA
+5   8  59  67 100 14  289  4 244  1  57 168 149  37  37   9   9  NA
+6   8  46  55 112 17  115  8 153  1  59 178 160  38  35  11   9  NA
+7   7  47  36  87 16  100  4 162  1  59 176 156  40  36  11   9  NA
+8  11  79  46  95 20  106 10 141  4  47 176 165  39  31  10   8  NA
+9  13  80  64 155 42  192  9 169  3  72 182 164  40  39  12  10  NA
+10 21 150 115 146 49  229  9 233  5  79 200 179  45  38  12   9  NA
+11 12  91  84 138 22  590  9 220  2  80 185 163  43  41  12  11  NA
+12 14 120  76 125 21  309  9 617  5  72 175 158  40  39  13  10  NA
+13 14 142  86 135 34  523  9 211 11  75 189 169  42  39  18  10  NA
+14 23  92  80 132 49  459  9 197  2  52 164 147  36  35  12   9  NA
+15 13  85  64 124 20  318  9 191  4  86 195 175  41  39  16  10  NA
+16 14 106  67 110 31  115  9 248  6  87 210 170  46  40  17  10  NA
+17 32 224 260 314 36  107 13 461  3  72 181 164  41  36  13   9  NA
+18 22 162 218 318 25  884  5 590  2  63 175 160  38  35  12   9  NA
+19 31 195 208 350 73  109  5 809 11  49 170 154  39  33  12   8  NA
+20 15 127 119 197 23   99  7 157  2 107 204 185  47  45  15  11  NA
+21 22 160 256 282 12  102 11 690  3  83 190 176  42  44  14   9  NA
+22 24 162 231 308 51 1031 17 558  2  82 194 168  42  39  14  10  NA
+23 19  64 163 229 16  109  8 345  1  91 190 172  44  42  13  11  NA
+> 

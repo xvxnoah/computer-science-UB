@@ -1,0 +1,50 @@
+getwd() # Retorna el path absolut del directori de treball actual
+dir() # Retorna un vector amb els fitxers/carpetes del directori
+library(openxlsx)
+library(openxlsx)
+df <- read.xlsx("fitxer_dades_P1.xlsx", startRow = 2, detectDates = TRUE)
+df <- read.table("fitxer_dades_P1.xlsx", header = TRUE)
+getwd() # Retorna el path absolut del directori de treball actual
+dir() # Retorna un vector amb els fitxers/carpetes del directori
+df <- read.table("fitxer_dades_P1.xlsx", header = TRUE)
+install.packages(openxlsx)
+install.packages("openxlsx")
+library(openxlsx)
+my_data <- read.xlsx("fitxer_dades_P1.xlsx",startRow = 2,detectDates=TRUE)
+getwd() # Retorna el path absolut del directori de treball actual#
+dir() # Retorna un vector amb els fitxers/carpetes del directori#
+library(openxlsx)#
+my_data <- read.xlsx("fitxer_dades_P1.xlsx",startRow = 2,detectDates=TRUE)
+my_data <- read.xlsx(path + "/fitxer_dades_P1.xlsx",startRow = 2,detectDates=TRUE)
+path <- getwd() # Retorna el path absolut del directori de treball actual
+my_data <- read.xlsx(path + "/fitxer_dades_P1.xlsx",startRow = 2,detectDates=TRUE)
+my_data <- read.xlsx("/fitxer_dades_P1.xlsx",startRow = 2,detectDates=TRUE)
+my_data <- read.xlsx(file.choose(),startRow = 2,detectDates=TRUE)
+my_data
+my_data <- read.xlsx(file.choose(),startRow = 1,detectDates=TRUE)
+my_data
+my_data <- read.xlsx(file.choose(),startRow = 1,detectDates=TRUE)
+my_data
+my_data[1]
+hist(my_data$SEX, xlab= "Sex", breaks=20, col=1, main="Sex")
+which.max(my_data$PES)
+my_data
+my_data$PES
+which.max(my_data$PES)
+which.max(my_data$SEX)
+my_data <- read.xlsx(file.choose(),startRow = 1,detectDates=TRUE)
+which.max(my_data$PES)
+my_data$PES[1083]
+table(my_data$SEX)
+table(my_data$SEX)#
+table(my_data$EDAT)#
+table(my_data$PES)#
+table(my_data$TALLA)
+table(my_data$SEX)
+table(my_data$EDAT)
+table(my_data$PES)
+table(my_data$TALLA)
+t <- table(my_data$EDAT)
+write.table(t, file = "test.txt", sep = ",", quote = FALSE, row.names = F)
+write.table(t, file = "test.txt", sep = ",", quote = FALSE, row.names = F)
+my_data

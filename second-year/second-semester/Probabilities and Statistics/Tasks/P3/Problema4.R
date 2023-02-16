@@ -1,0 +1,3 @@
+Si tomamos en cuenta un examen con 100 preguntas para pasar se requieren 60 respuestas correctas y si cada respuesta correcta tiene una probabilidad de 0.25 podemos calcular la probabilidad de obtener sesenta respuestas correctas (P(x=60) = (100!/60!*40!)*.25^60*.75^40) o más. Recordemos que la probabilidad un rango de resultados es la suma de todas las probabilidades de tal forma que la probabilidad de pasar un examen es igual a la suma de probabilidades de todas las respuestas aprobatorias (P(x>=60) = P(x=60)+P(x=70)+P(x=80)+P(x=90)+P(x=100))
+
+# MÉS O MENYS IGUAL AL PROBLEMA 5

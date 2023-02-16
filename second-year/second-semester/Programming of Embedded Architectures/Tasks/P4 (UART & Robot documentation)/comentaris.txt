@@ -1,0 +1,6 @@
+	En el diagrama de flux  on son s’avaluen condicions es posa un símbol del diamant (rombe)
+	El diagrama de flux no representa cap programa es genèric. El diagrama de flux hauria de representar el programa implementat.
+	El define per utilitzar el emulat en algun lloc està intercanviat el real pel simulat
+	No teniu a la capçalera de uart.h la funció init_UART_SIMULACIO(), ni EUSCIA0_IRQHandler()
+	Simulat no funciona
+

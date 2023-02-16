@@ -1,0 +1,7 @@
+error.txt
+imprime
+imprime-mensajes.c
+imprime_redireccion.txt
+lee-palabras.c
+lee_palabras
+ls-out.txt
