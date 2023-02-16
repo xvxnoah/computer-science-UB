@@ -6,7 +6,7 @@ Welcome to my repository for all the work I have completed during my Bachelor's 
 > 
 >The documents for each subject are written in the language in which they are taught, most of which are Catalan or Spanish.
 
-1️⃣: First year
+1️⃣: First year ✅
 ---
 - First semester
   - Basic Digital Design
@@ -22,7 +22,7 @@ Welcome to my repository for all the work I have completed during my Bachelor's 
   - Data Structures
   - Programming II
 
-2️⃣: Second year
+2️⃣: Second year ✅
 ---
 - First semester
   - Advanced Algorithms
