@@ -37,7 +37,7 @@ Welcome to my repository for all the work I have completed during my Bachelor's 
   - Programming of Embedded Architectures
   - Operating Systems I
   
-3️⃣: Third year
+3️⃣: Third year ✅
 ---
 - First semester
   - Operating Systems (Master course in Chalmers Universty of Technology)
@@ -51,6 +51,13 @@ Welcome to my repository for all the work I have completed during my Bachelor's 
   - Logic and Languages
   - Databases (Master course in Chalmers University of Technology)
   - Distributed Software
+ 
+4️⃣: Fourth year
+---
+- First semester
+  - Software Engineering
+- Second semester
+  - Thesis
 
 
 ### If you have any questions regarding any section of the repository, don't hesitate to [contact me](noahmv59@gmail.com).
