@@ -1,0 +1,51 @@
+Si es vol calcular la dimensió d'objectes representats amb malles poligonals i es té un mètode que calcula la capsa contenidora 3D d'una malla, quina és la millor representació tenint en compte l'eficiència en memòria i en temps?
+A) La representació explícita.
+B) La representació per vèrtexs indexats.
+C) La representació per adjacència de cares.
+D) El model winged-edge.
+ANSWER: B
+
+Es vol mapejar unes dades geolocalitzades procedents d'un mapa, en un món virtual usant cilindres com a gyzmos. 
+  Les DADES:
+       (xmin=-24, xmax=76), (zmin=30, zmax=70). Els valors estan (vmin= 1 milió,  vmax= 88 milions).  
+ La VISUALITZACIÓ: En un mapa (en pla Y=0) i
+      (xminVirtual = -10, yminVirtual = -1, zminVirtual = -10) i (xmaxVirtual = 10, ymaxVirtual = 10, zmaxVirtual = 10). 
+    Les bases dels cilindres es situaran just en el mapa, mantindran el seu radi a 1 i la seva alçada    servirà per a representar la població de cada país. 
+       Valor (x = 1, z = 42, v = 42 milions),        quina de les següents afirmacions és certa?
+A) El centre de la base del cilindre en el món virtual estarà en el punt (-5, -4) com a resultat d'aplicar al punt (1, 0, 42) la matriu resultant de Translate(-5.2, 0.0, -25.0) *Scale(0.2, 1.0, 0.5)
+B) El centre de la base del cilindre en el món virtual estarà en el punt (-9.8, 11) com a resultat d'aplicar al punt (1, 0, 42) la matriu resultant de Translate(-10, 0.0, -10.0) *Scale(0.2, 1.0, 0.5)
+C) El valor v = 42 milions afectarà a l'alçada del cilindre en un factor de 1/8.
+D) Cap de les anteriors respostes és certa.
+ANSWER: A
+
+Cada estat correspon a una malla poligonal representada per un conjunt de triangles mitjançant vèrtexs indexats. Cada estat e està centrat al punt (xe, ye, ze), ja posicionat en el mapa. A part, cada estat té un valor ve que representa la població que té, i es vol mapejar directament com a l'escala vertical en la visualització de cada estat. 
+A) És necessari construir cadascun dels triangles que formen la malla poligonal a partir de la representació de vèrtexs indexats i aplicar a cada triangle la transformació Translate (xe, ye, ze)* Scale(1.0, ve, 1.0) *Translate (-xe, -ye, -ze) i recalcular les normals associades a cada triangle.
+B) És necessari calcular la capsa mínima contenidora de cada estat i trobar el punt central de la capsa (xc, yc, zc) per a aplicar la transformació Translate (xc, yc, zc)* Scale(1.0, ve, 1.0) *Translate (-xc, -yc, -zc)
+C) Per a optimitzar, cal només recórrer els vèrtexs i aplicar l'escalat Scale(1.0, ve, 1.0). 
+D) És necessari aplicar Translate (xe, ye, ze)* Scale(1.0, ve, 1.0) *Translate (-xe, -ye, -ze) a cada vèrtex de cada estat, sense modificar els índexs de la representació per vèrtexs indexats, ni les normals associades.
+ANSWER: D
+
+En relació al model Blinn-Phong, quina de les següents afirmacions és FALSA?
+A) La fórmula de Blinn-Phong considera reflexions difuses directes i indirectes.
+B) L'atenuació de la llum en la fórmula de Blinn-Phong afecta només a les reflexions directes
+C) La fórmula de Blinn-Phong considera sempre les reflexions difuses indirectes, independentment d'on estiguin les llums i l'observador. 
+D) La fórmula de Blin-Phong considera reflexions especulars directes i indirectes.
+ANSWER: D
+
+Suposa que es vol il·luminar una esfera de centre (0,0,0) i radi 1 amb una llum direccional amb direcció L = (1, 1, 1) i l'observador està posicionat al punt (5, 5, 0). 
+LLUM:          Id = (0.8, 0.8, 0.8), Is = (1.0, 1.0, 1.0) i Ia = (0.2, 0.2, 0.2). 
+MATERIAL: Kd=(0.4, 0.4, 0.8), Ka = (0.1, 0.1, 0.1) i Ks = (1.0, 1.0, 1.0) amb un coeficient de shineness de 500. 
+Com es veurà l'esfera utilitzant Blinn-Phong? Suposa que no hi ha intensitat ambient global, ni atenuació en profunditat. 
+A) L'esfera es veurà de color blau amb una taca petita de color blanc que correspon al reflex especular. 
+B) L'esfera es veurà de color verd, amb una taca petita de color blanc en el reflex especular. 
+C) L'esfera es veurà de color vermell amb una taca petita de color blanc que correspon al reflex especular.
+D) Els valors del material estan mal definits ja que la suma de Kd i Ka han de ser (1.0, 1.0, 1.0)
+D) La fórmula de Blinn-Phong considera reflexions especulars directes i indirectes.
+ANSWER: A
+
+Quan es vol atenuar la llum segons la seva distància a l'objecte que il·lumina, quina de les següents afirmacions és CERTA? 
+A) Es considera cada llum com un conjunt de llums i a cada punt de l'objecte es calculen tants rajos d'ombres com llums té el conjunt. El promig de la contribució de tots els rajos d'ombra produeixen l'efecte de l'atenuació 
+B) L'atenuació només té sentit en llums puntuals i llums de tipus spot-light
+C) L'atenuació només afecta als components de llum indirecta de la fórmula de Blinn-Phong.
+D) L'atenuació en objectes transparents té en compte la refracció del raig en relació als índexs de refracció dels materials que travessa. 
+ANSWER: B
