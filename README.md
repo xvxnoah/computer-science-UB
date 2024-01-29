@@ -1,6 +1,6 @@
 # Bachelor in Computer Science at University of Barcelona
 
-Welcome to my repository for all the work I have completed during my Bachelor's degree in Computer Science at the University of Barcelona! Here, you will find a collection of projects and assignments that showcase my skills and progress as a computer science student.
+Welcome to my repository for all the work I have completed during my Bachelor's degree in Computer Science at the University of Barcelona! Here, you will find a collection of projects and assignments that showcase my skills and progress as a Computer Science student.
 
 > **Note**
 > 
