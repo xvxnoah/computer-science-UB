@@ -1,0 +1,77 @@
+SEARCH PROBLEM --> CHESS
+
+State space {state i} --> Board configuration
+Initial state         --> Board initial config.
+Successor function (given a state, possible moves) --> Possible chess moves
+Goal test (checks if given state is the goal) -->  isCheckMate(state)
+
+Search algorithm
+-----------------
+Final path  State_initial -> State_goal
+
+function search(problem, f) -> where f is the function that gives the cost
+    node <-- (State_initial, +info...)
+    visitedNodes <-- null
+    fringe (frontera) <-- node
+
+    while fringe not null:
+        fringe.sort(f)
+        node <-- fringe.pop()
+
+        if (node.isGS):
+            return Solution(node)
+        
+        for each successor in successors(node):
+            state <- successor.state
+
+
+----- PREPARACIÓ -----
+--> Coses per provar (a part de A*):
+	- DFS
+	- BFS
+	- Extra: altres h per A* (+ nota)
+
+--> Coses per pensar:
+	- DFS vs. BFS
+	- A*: l'heurística és admisible? és consistent? és la distància de Manhattan? per què?
+
+Entrega: aichess.py + pdf (responen a les preguntes + reflexions ~ 1 pàgina) en tar.gz (nom cognom de la parella); tramesa abans de l'avaluació presencial.
+
+POSSIBLE QUESTIONS:
+-------------------
+
+The two search algorithms you have implemented are Breadth-First Search (BFS) and Depth-First Search (DFS) with some optimizations. I'll describe the differences between them:
+
+1. **Breadth-First Search (BFS):**
+
+   - **Data Structure**: BFS uses a queue (in your code, `BFSQueue`) to store nodes for exploration. It starts from the initial state and explores all nodes at the current depth level before moving on to deeper levels.
+
+   - **Exploration Order**: BFS explores nodes in the order they are added to the queue. It explores all nodes at one depth level before moving to the next level. This ensures that it finds the shortest path to the goal if the edges have uniform costs.
+
+   - **Optimality**: BFS guarantees an optimal solution in terms of the number of steps to reach the goal because it explores nodes in increasing order of depth.
+
+   - **Memory Usage**: BFS can consume a significant amount of memory, especially if the branching factor (number of possible moves in your chess game) is high. It needs to store all nodes at the current depth level in the queue.
+
+2. **Depth-First Search (DFS):**
+
+   - **Data Structure**: DFS uses recursion (in your code, `DepthFirstSearchOptimized` and `DepthFirstSearch`) or a stack (not shown in your code) to store the path. It starts from the initial state and explores as deeply as possible along each branch before backtracking.
+
+   - **Exploration Order**: DFS explores nodes in a depth-first manner, meaning it goes as deep as possible along one branch before exploring other branches. This can lead to very deep exploration before considering shallower nodes.
+
+   - **Optimality**: DFS does not guarantee an optimal solution in terms of the number of steps to reach the goal. It may find a solution faster than BFS, but that solution may not be the shortest path.
+
+   - **Memory Usage**: DFS typically uses less memory than BFS because it only needs to store a path from the root to the current node. However, it can go very deep and hit the recursion limit, causing a stack overflow.
+
+3. **Depth-First Search with Optimization (`DepthFirstSearchOptimized`):**
+
+   - This version of DFS includes some optimizations. It checks whether it's worth exploring a node before diving into its children, and it also keeps track of the moved piece and reverts the board state after exploration.
+
+4. **Comparison**:
+
+   - BFS is suitable for finding the shortest path when all edges have uniform costs, but it can be memory-intensive.
+   
+   - DFS explores deeper before shallower, making it memory-efficient but not guaranteed to find the shortest path.
+   
+   - `DepthFirstSearchOptimized` appears to be a variant of DFS with additional logic for chess-specific optimizations.
+
+Your choice of which algorithm to use depends on your specific problem requirements and constraints. BFS is generally a good choice for finding the shortest path, while DFS can be used when memory usage is a concern and the optimal solution isn't necessary. The optimized DFS seems to be tailored for your chess game, considering the nature of chess moves.

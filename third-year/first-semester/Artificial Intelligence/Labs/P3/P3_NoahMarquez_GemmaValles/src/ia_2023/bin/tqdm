@@ -1,0 +1,10 @@
+#!/bin/sh
+'''exec' "/Users/noahmv/Desktop/🫀/👨🏼‍🎓/UB👨🏼‍🎓/Cuarto/Semestre I/IA/Labs/P3/P3_NoahMarquez_GemmaValles/src/ia_2023/bin/python3" "$0" "$@"
+' '''
+# -*- coding: utf-8 -*-
+import re
+import sys
+from tqdm.cli import main
+if __name__ == '__main__':
+    sys.argv[0] = re.sub(r'(-script\.pyw|\.exe)?$', '', sys.argv[0])
+    sys.exit(main())
