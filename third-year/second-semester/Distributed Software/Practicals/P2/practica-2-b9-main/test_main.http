@@ -1,0 +1,61 @@
+# Test your FastAPI endpoints
+
+GET http://127.0.0.1:8000/
+Accept: application/json
+
+###
+
+GET http://127.0.0.1:8000/hello/User
+Accept: application/json
+
+###
+
+GET http://127.0.0.1:8000/hello/Noah
+Accept: application/json
+
+###
+
+GET http://127.0.0.1:8000/teams/?skip=1&limit=2
+Accept: application/json
+
+###
+
+GET http://127.0.0.1:8000/teams/?skip=0&limit=2
+Accept: application/json
+
+###
+
+GET http://127.0.0.1:8000/team/Barça
+Accept: application/json
+
+###
+
+GET http://127.0.0.1:8000/users/Noah
+Accept: application/json
+
+###
+
+GET http://127.0.0.1:8000/users/
+Accept: application/json
+
+###
+
+GET http://127.0.0.1:8000/users/me
+Accept: application/json
+
+###
+
+POST http://127.0.0.1:8000/teams
+Content-Type: application/json
+
+{   "name": "CSC Futsal",
+    "country": "Spain",
+    "description": "Futbol Sala Team"}
+
+###
+
+POST http://127.0.0.1:8000/teams
+Content-Type: application/json
+
+{   "name": "Valencia",
+    "country": "Spain"}
