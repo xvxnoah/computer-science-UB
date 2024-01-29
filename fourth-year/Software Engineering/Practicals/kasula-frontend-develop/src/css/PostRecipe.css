@@ -1,0 +1,85 @@
+.difficulty-star.active {
+  color: #e06c00;
+}
+
+.difficulty-star.active:hover {
+  color: rgb(151, 91, 1);
+}
+
+.difficulty-star.active.hovered {
+  color: rgb(151, 91, 1);
+}
+
+.difficulty-star.active.above-hovered {
+  color: #7c7c7c;
+}
+
+.difficulty-star.inactive {
+  color: #a7a7a7;
+}
+
+.difficulty-star.inactive:hover {
+  color: #7c7c7c;
+}
+
+.difficulty-star.inactive.hovered {
+  color: rgb(151, 91, 1);
+}
+
+.add-ingredient-button.active {
+  color: rgb(0, 194, 0);
+}
+
+.add-ingredient-button.inactive {
+  color: #a7a7a7;
+}
+
+.add-ingredient-button.active:hover {
+  color: rgb(0, 99, 0);
+}
+
+.remove-ingredient-button {
+  color: rgb(199, 0, 0);
+}
+
+.remove-ingredient-button:hover {
+  color: rgb(105, 0, 0);
+}
+
+/* #buttons_remove {
+
+  border: none;
+  color: white;
+  cursor: pointer;
+  margin-bottom: 10px;
+  padding: 5px 6px;
+  font-size: 16px;
+  min-width: auto;
+  width: 25px;
+}
+
+.ingredient-fade-enter {
+  opacity: 0.01;
+  transform: translateX(-100%);
+}
+
+.ingredient-fade-enter.ingredient-fade-enter-active {
+  opacity: 1;
+  transform: translateX(0);
+  transition: opacity 500ms ease-in, transform 500ms ease-in;
+}
+
+.ingredient-fade-exit {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.ingredient-fade-exit.ingredient-fade-exit-active {
+  opacity: 0.01;
+  transform: translateX(-100%);
+  transition: opacity 500ms ease-in, transform 500ms ease-in;
+} */
+
+.ingredient-list, .preparation-list {
+  max-height: 400px;
+}

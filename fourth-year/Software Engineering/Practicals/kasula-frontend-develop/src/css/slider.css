@@ -1,0 +1,37 @@
+input[type=range]::-webkit-slider-runnable-track {
+    background: #ddd;
+}
+
+input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    background: rgb(255, 74, 42);
+}
+
+input[type=range]:focus {
+    outline: none;
+}
+
+input[type=range]:focus::-webkit-slider-runnable-track {
+    background: #ffafaf;
+}
+
+input[type=range]::-moz-range-track {
+    background: #ffafaf;
+}
+
+input[type=range]::-moz-range-thumb {
+    background: rgb(255, 74, 42);
+}
+
+input[type=range]:focus::-moz-range-thumb {
+    background: rgb(155, 26, 4);
+}
+
+/*hide the outline behind the border*/
+input[type=range]:-moz-focusring {
+    outline: none;
+}
+
+input[type=range]:focus::-moz-range-track {
+    background: #ffc0c0;
+}

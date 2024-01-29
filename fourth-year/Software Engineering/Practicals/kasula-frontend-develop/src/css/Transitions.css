@@ -1,0 +1,21 @@
+.slideUp-enter, .slideUp-appear {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  
+  .slideUp-enter-active, .slideUp-appear-active {
+    opacity: 1;
+    transform: translateY(0);
+    transition: opacity 500ms, transform 500ms;
+  }
+  
+  .slideUp-exit {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  .slideUp-exit-active {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 500ms, transform 500ms;
+  }

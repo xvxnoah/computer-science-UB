@@ -1,0 +1,33 @@
+# API Server
+fastapi
+uvicorn[standard]
+pydantic[email]
+pydantic-settings[dotenv]
+
+# Database
+motor
+dnspython
+
+# Development
+python-multipart
+pip-tools
+black
+flake8
+
+# Encryption
+bcrypt
+pyjwt
+
+# Tests
+httpx
+requests
+pytest
+coverage
+
+# Google Cloud Storage
+google-cloud-storage
+google-cloud-secret-manager
+
+# Unit Tests
+mongomock
+mongomock_motor

@@ -1,0 +1,47 @@
+{
+    "routes": [
+      {
+        "route": "/signup",
+        "allowedRoles": ["anonymous"]
+      },
+      {
+        "route": "/login",
+        "allowedRoles": ["anonymous"]
+      },    
+      {
+        "route": "/passwordrecovery",
+        "allowedRoles": ["anonymous"]
+      },    
+      {
+        "route": "/passwordrecovery/set",
+        "allowedRoles": ["anonymous"]
+      },    
+      {
+        "route": "/postRecipe",
+        "allowedRoles": ["authenticated"]
+      },    
+      {
+        "route": "/logout",
+        "allowedRoles": ["authenticated"]
+      },
+      {
+        "route": "/RecipeDetail/:id",
+        "allowedRoles": ["authenticated"]
+      },
+      {
+        "route": "/*",
+        "serve": "/index.html",
+        "statusCode": 200
+      }
+    ],
+    "navigationFallback": {
+      "rewrite": "/index.html",
+      "exclude": ["/images/*.{png,jpg,gif}", "/css/*", "/js/*"]
+    },
+    "responseOverrides": {
+      "404": {
+        "rewrite": "/index.html",
+        "statusCode": 200
+      }
+    }
+  }

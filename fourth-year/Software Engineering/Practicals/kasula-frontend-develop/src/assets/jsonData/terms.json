@@ -1,0 +1,74 @@
+{
+  "policies": [
+    {
+      "title": "Terms of Use",
+      "sections": [
+        {
+          "name": "Acceptance of Terms",
+          "body": "By accessing or using our website Kasulà, you agree to comply with and be bound by these Terms of Use. If you do not agree to these terms, please do not use the Website."
+        },
+        {
+          "name": "User Registration",
+          "body": "In order to access certain features of the Website, you may be required to register an account. When registering, you agree to provide accurate and current information. You are responsible for maintaining the confidentiality of your account credentials. You must be at least 13 years of age to use the Website. If you are under 13, you may only use the Website with the permission and supervision of a parent or legal guardian."
+        },
+        {
+          "name": "User Content",
+          "body": "The Website allows users to post, share, and review cooking recipes and related content. You are solely responsible for the content you post, and it must not violate any applicable laws, including copyright, privacy, or other intellectual property rights. We reserve the right to remove or moderate any content that we believe violates our policies or the law."
+        },
+        {
+          "name": "Privacy and Data Use",
+          "body": "Your use of the Website is subject to our Privacy Policy, which outlines how we collect, use, and protect your personal information. By using the Website, you consent to the practices described in the Privacy Policy."
+        },
+        {
+          "name": "Termination",
+          "body": "We may terminate or suspend your access to the Website at our discretion, with or without cause, and without notice. You may also terminate your account at any time by following the instructions on the Website."
+        },
+        {
+          "name": "Disclaimers and Limitations of Liability",
+          "body": "The content on the Website is provided for informational purposes and may not be accurate or up-to-date. We are not responsible for any reliance on the content. We do not guarantee that the Website will be uninterrupted, secure, or error-free."
+        },
+        {
+          "name": "Changes to Terms",
+          "body": "We may update these Terms of Use at any time. It is your responsibility to check for updates periodically. Your continued use of the Website after any changes constitutes acceptance of the new terms."
+        },
+        {
+          "name": "Governing Law",
+          "body": "These Terms of Use are governed by the laws of Spain and Europe, and any disputes are subject to the exclusive jurisdiction of the courts in Barcelona."
+        }
+      ]
+    },
+    {
+      "title": "Privacy Policy",
+      "sections": [
+        {
+          "name": "Information We Collect",
+          "body": "User Registration: When you create an account, we collect your username, email address, and password. User-Generated Content: We collect content you post, including recipes and reviews. Usage Information: We collect data about your interactions with the Website, including your IP address, browser type, and device information."
+        },
+        {
+          "name": "How We Use Your Information",
+          "body": "User Account: We use your registration information to create and manage your account. User-Generated Content: We display and share the content you post on the Website. Analytics: We use data to analyze and improve our services."
+        },
+        {
+          "name": "Data Security",
+          "body": "We implement security measures to protect your personal information, but no method of transmission over the internet is entirely secure."
+        },
+        {
+          "name": "Sharing Your Information",
+          "body": "We may share your information with third parties as described in our Privacy Policy, such as service providers and for legal or regulatory reasons."
+        },
+        {
+          "name": "Your Rights",
+          "body": "You have the right to access, correct, or delete your personal information. You can do so by contacting us as described in the Privacy Policy."
+        },
+        {
+          "name": "Changes to Privacy Policy",
+          "body": "We may update the Privacy Policy. The effective date will be displayed on the page."
+        },
+        {
+          "name": "Contact Information",
+          "body": "If you have any questions or concerns about this Privacy Policy, please contact us at support@kasula.co."
+        }
+      ]
+    }
+  ]
+}

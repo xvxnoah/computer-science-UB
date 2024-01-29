@@ -1,0 +1,28 @@
+{"fields": [{
+    "name": "none",
+    "displayName": "---"
+}, {
+    "name": "name",
+    "displayName": "Title"
+}, {
+    "name": "average_rating",
+    "displayName": "Rating"
+}, {
+    "name": "cooking_time",
+    "displayName": "Cooking Time"
+}, {
+    "name": "difficulty",
+    "displayName": "Difficulty"
+}, {
+    "name": "energy",
+    "displayName": "Energy"
+}, {
+    "name": "username",
+    "displayName": "Recipe Author"
+}, {
+    "name": "creation_date",
+    "displayName": "Creation Date"
+}, {
+    "name": "updated_at",
+    "displayName": "Last Modified"
+}]}

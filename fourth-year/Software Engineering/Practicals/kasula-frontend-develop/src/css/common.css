@@ -1,0 +1,170 @@
+.form-container {
+    background-color: #ffe7dfe0;
+}
+
+.bg-lightest {
+    background-color: #ffe7dfe0;
+}
+
+.bg-light {
+    background-color: #fcccc3;
+}
+
+.bg-normal {
+    background-color: #FFC1AC;
+}
+
+#mainButton {
+    background: linear-gradient(90deg, rgb(245 36 20) 0%, rgb(240 109 90) 100%);
+    transition: background 0.3s ease;
+    color: white;
+}
+
+#mainButton:hover {
+    background: linear-gradient(90deg, rgb(161, 16, 5) 0%, rgb(212, 91, 72) 100%);
+}
+
+.positive-button {
+    color: black;
+    background: linear-gradient(90deg, rgb(255, 255, 255) 0%, rgb(231, 231, 231) 100%);
+    transition: background 0.3s ease;
+}
+
+.positive-button:hover {
+    background: linear-gradient(90deg, rgb(187, 187, 187) 0%, rgb(139, 139, 139) 100%);
+}
+
+.box-shadow {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    /* Puedes ajustar estos valores */
+}
+
+.min-width-container {
+    min-width: 8ch;
+    display: inline-block;
+}
+
+.colorless-span-button {
+    color: rgb(82, 82, 82);
+}
+
+.colorless-span-button:hover {
+    color: rgb(0, 0, 0);
+}
+
+.highlighter {
+    background-color: #d4d4d4e0;
+}
+
+.transition-03s {
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.transition-03s:hover {
+    transform: translateY(-10px);
+}
+
+.btn-normal {
+    background-color: #FFC1AC;
+    color: black;
+}
+
+.btn-normal:hover {
+    background-color: #bd8978;
+    color: black;
+}
+
+.btn-light {
+    background-color: #fcccc3;
+    color: black;
+}
+
+.btn-light:hover {
+    background-color: #c9a396;
+    color: black;
+}
+
+.btn-lightest {
+    background-color: #ffe7dfe0;
+    color: black;
+}
+
+.btn-lightest:hover {
+    background-color: #d8bfb0;
+    color: black;
+}
+
+.show #collection-dropdown {
+    background-color: #bd8978;
+    color: black;
+}
+
+.action-img {
+    filter:  brightness(100%);
+}
+
+.action-img:hover {
+    filter:  brightness(70%);
+}
+
+.no-hover {
+    pointer-events: none;
+}
+
+.user-nav {
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.user-nav-image {
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+
+#search-bar {
+    border-right: none;
+    transition: none;
+}
+
+#search-bar-clear {
+    background-color: white;
+    border-left: none;
+    cursor: text;
+    transition: none;
+}
+
+#search-bar-container:focus-within #search-bar {
+    border-color: #80bdff;
+}
+
+#search-bar-container:focus-within #search-bar-clear {
+    border-color: #80bdff;
+}
+
+.rating-star.active {
+    color: #e0b700;
+}
+
+.rating-star.active:hover {
+    color: rgb(151, 124, 43);
+}
+
+.rating-star.active.hovered {
+    color: rgb(151, 124, 43);
+}
+
+.rating-star.active.above-hovered {
+    color: #7c7c7c;
+}
+
+.rating-star.inactive {
+    color: #a7a7a7;
+}
+
+.rating-star.inactive:hover {
+    color: #7c7c7c;
+}
+
+.rating-star.inactive.hovered {
+    color: rgb(151, 124, 43);
+}

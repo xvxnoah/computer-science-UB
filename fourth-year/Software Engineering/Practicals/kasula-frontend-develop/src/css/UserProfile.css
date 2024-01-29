@@ -1,0 +1,12 @@
+#followers-list {
+  background-color: white;
+  transition: transform 0.3s, box-shadow 0.3s;  
+  color: #333;
+}
+
+#followers-list:hover {
+  background-color: rgb(239, 170, 170);
+  transform: translateX(10px);  
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);   
+  color: #333;
+}
